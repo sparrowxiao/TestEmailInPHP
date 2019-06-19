@@ -14,6 +14,6 @@ run testphp.php on server to check the current php info.
 modify the email address in testemail.php you are going to use
 
 #### step 3
-run testemail.html and submit the message to see if you receive the right result from mail server.
+run testemail.html and submit a message to see if you can receive the right result from mail server.
 
 
