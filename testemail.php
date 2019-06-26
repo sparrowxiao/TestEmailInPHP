@@ -7,6 +7,10 @@ $msg = $message;
 $msg = wordwrap($msg,70);
 
 // send email
-mail("youremail@address.com","Your Subject",$msg);
-echo("<h1>Thanks for your message.</h1>")
+$succeed = mail("youremail@address.com","Your Subject",$msg);
+if ($succeed){
+    header('Location:thankyou.html');
+}else{
+    echo('<h1>the email service is having an issue, we are working on it now. please submit your message later, thank you.</h1>');
+}
 ?>
